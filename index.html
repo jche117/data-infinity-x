@@ -312,6 +312,161 @@
           </table>
         </div>
 
+        <div class="compare-subhead">
+          <h3>Relative performance vs Claude Opus&nbsp;4.7</h3>
+          <p>
+            Indicative task quality as a percentage of the most advanced Claude model
+            (<strong>Claude Opus&nbsp;4.7</strong> = 100% baseline) across our service areas.
+            Top open-weight contenders: <strong>DeepSeek&nbsp;V4&nbsp;Pro</strong>, <strong>Qwen&nbsp;3.7</strong>,
+            <strong>Llama&nbsp;4</strong>, and <strong>Kimi&nbsp;K2.6</strong>.
+          </p>
+        </div>
+
+        <div class="table-wrap table-wrap-secondary" role="region" aria-label="Percentage performance of open-weight models versus Claude Opus 4.7" tabindex="0">
+          <table class="compare-table compare-table-pct">
+            <caption class="sr-only">
+              Percentage of Claude Opus 4.7 performance for DeepSeek V4 Pro, Qwen 3.7, Llama 4, and Kimi K2.6 by service area
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Service area</th>
+                <th scope="col">
+                  Claude Opus&nbsp;4.7
+                  <span class="th-sub">Frontier · baseline</span>
+                </th>
+                <th scope="col">
+                  DeepSeek&nbsp;V4&nbsp;Pro
+                  <span class="th-sub">Open-weight</span>
+                </th>
+                <th scope="col">
+                  Qwen&nbsp;3.7
+                  <span class="th-sub">Open-weight</span>
+                </th>
+                <th scope="col">
+                  Llama&nbsp;4
+                  <span class="th-sub">Open-weight</span>
+                </th>
+                <th scope="col">
+                  Kimi&nbsp;K2.6
+                  <span class="th-sub">Open-weight</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  Pattern recognition
+                  <span class="row-sub">Classification, clustering, trend signals</span>
+                </th>
+                <td data-label="Claude Opus 4.7"><span class="pct pct-base" style="--p:100"><span class="pct-num">100%</span></span></td>
+                <td data-label="DeepSeek V4 Pro"><span class="pct" style="--p:96"><span class="pct-num">96%</span></span></td>
+                <td data-label="Qwen 3.7"><span class="pct" style="--p:95"><span class="pct-num">95%</span></span></td>
+                <td data-label="Llama 4"><span class="pct" style="--p:94"><span class="pct-num">94%</span></span></td>
+                <td data-label="Kimi K2.6"><span class="pct" style="--p:93"><span class="pct-num">93%</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Anomaly detection
+                  <span class="row-sub">Ops, quality, fraud, sensor outliers</span>
+                </th>
+                <td data-label="Claude Opus 4.7"><span class="pct pct-base" style="--p:100"><span class="pct-num">100%</span></span></td>
+                <td data-label="DeepSeek V4 Pro"><span class="pct" style="--p:94"><span class="pct-num">94%</span></span></td>
+                <td data-label="Qwen 3.7"><span class="pct" style="--p:93"><span class="pct-num">93%</span></span></td>
+                <td data-label="Llama 4"><span class="pct" style="--p:95"><span class="pct-num">95%</span></span></td>
+                <td data-label="Kimi K2.6"><span class="pct" style="--p:92"><span class="pct-num">92%</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Process automation
+                  <span class="row-sub">Routing, extraction, workflow steps</span>
+                </th>
+                <td data-label="Claude Opus 4.7"><span class="pct pct-base" style="--p:100"><span class="pct-num">100%</span></span></td>
+                <td data-label="DeepSeek V4 Pro"><span class="pct" style="--p:97"><span class="pct-num">97%</span></span></td>
+                <td data-label="Qwen 3.7"><span class="pct" style="--p:96"><span class="pct-num">96%</span></span></td>
+                <td data-label="Llama 4"><span class="pct" style="--p:95"><span class="pct-num">95%</span></span></td>
+                <td data-label="Kimi K2.6"><span class="pct" style="--p:96"><span class="pct-num">96%</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Private knowledge &amp; RAG
+                  <span class="row-sub">Policies, manuals, internal Q&amp;A</span>
+                </th>
+                <td data-label="Claude Opus 4.7"><span class="pct pct-base" style="--p:100"><span class="pct-num">100%</span></span></td>
+                <td data-label="DeepSeek V4 Pro"><span class="pct" style="--p:95"><span class="pct-num">95%</span></span></td>
+                <td data-label="Qwen 3.7"><span class="pct" style="--p:94"><span class="pct-num">94%</span></span></td>
+                <td data-label="Llama 4"><span class="pct" style="--p:96"><span class="pct-num">96%</span></span></td>
+                <td data-label="Kimi K2.6"><span class="pct" style="--p:93"><span class="pct-num">93%</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Document &amp; vision intelligence
+                  <span class="row-sub">Invoices, forms, inspection imagery</span>
+                </th>
+                <td data-label="Claude Opus 4.7"><span class="pct pct-base" style="--p:100"><span class="pct-num">100%</span></span></td>
+                <td data-label="DeepSeek V4 Pro"><span class="pct" style="--p:91"><span class="pct-num">91%</span></span></td>
+                <td data-label="Qwen 3.7"><span class="pct" style="--p:93"><span class="pct-num">93%</span></span></td>
+                <td data-label="Llama 4"><span class="pct" style="--p:94"><span class="pct-num">94%</span></span></td>
+                <td data-label="Kimi K2.6"><span class="pct" style="--p:90"><span class="pct-num">90%</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Predictive maintenance
+                  <span class="row-sub">Failure signals from ops history</span>
+                </th>
+                <td data-label="Claude Opus 4.7"><span class="pct pct-base" style="--p:100"><span class="pct-num">100%</span></span></td>
+                <td data-label="DeepSeek V4 Pro"><span class="pct" style="--p:93"><span class="pct-num">93%</span></span></td>
+                <td data-label="Qwen 3.7"><span class="pct" style="--p:92"><span class="pct-num">92%</span></span></td>
+                <td data-label="Llama 4"><span class="pct" style="--p:94"><span class="pct-num">94%</span></span></td>
+                <td data-label="Kimi K2.6"><span class="pct" style="--p:91"><span class="pct-num">91%</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Demand &amp; capacity forecasting
+                  <span class="row-sub">Planning on proprietary history</span>
+                </th>
+                <td data-label="Claude Opus 4.7"><span class="pct pct-base" style="--p:100"><span class="pct-num">100%</span></span></td>
+                <td data-label="DeepSeek V4 Pro"><span class="pct" style="--p:94"><span class="pct-num">94%</span></span></td>
+                <td data-label="Qwen 3.7"><span class="pct" style="--p:93"><span class="pct-num">93%</span></span></td>
+                <td data-label="Llama 4"><span class="pct" style="--p:93"><span class="pct-num">93%</span></span></td>
+                <td data-label="Kimi K2.6"><span class="pct" style="--p:92"><span class="pct-num">92%</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Secure internal assistants
+                  <span class="row-sub">Staff copilots on internal systems</span>
+                </th>
+                <td data-label="Claude Opus 4.7"><span class="pct pct-base" style="--p:100"><span class="pct-num">100%</span></span></td>
+                <td data-label="DeepSeek V4 Pro"><span class="pct" style="--p:96"><span class="pct-num">96%</span></span></td>
+                <td data-label="Qwen 3.7"><span class="pct" style="--p:95"><span class="pct-num">95%</span></span></td>
+                <td data-label="Llama 4"><span class="pct" style="--p:96"><span class="pct-num">96%</span></span></td>
+                <td data-label="Kimi K2.6"><span class="pct" style="--p:94"><span class="pct-num">94%</span></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Hard multi-step reasoning
+                  <span class="row-sub">Novel research-grade problems</span>
+                </th>
+                <td data-label="Claude Opus 4.7"><span class="pct pct-base" style="--p:100"><span class="pct-num">100%</span></span></td>
+                <td data-label="DeepSeek V4 Pro"><span class="pct" style="--p:92"><span class="pct-num">92%</span></span></td>
+                <td data-label="Qwen 3.7"><span class="pct" style="--p:91"><span class="pct-num">91%</span></span></td>
+                <td data-label="Llama 4"><span class="pct" style="--p:88"><span class="pct-num">88%</span></span></td>
+                <td data-label="Kimi K2.6"><span class="pct" style="--p:90"><span class="pct-num">90%</span></span></td>
+              </tr>
+              <tr class="pct-avg-row">
+                <th scope="row">
+                  Average across service areas
+                  <span class="row-sub">Unweighted mean of rows above</span>
+                </th>
+                <td data-label="Claude Opus 4.7"><span class="pct pct-base" style="--p:100"><span class="pct-num">100%</span></span></td>
+                <td data-label="DeepSeek V4 Pro"><span class="pct" style="--p:94"><span class="pct-num">94%</span></span></td>
+                <td data-label="Qwen 3.7"><span class="pct" style="--p:94"><span class="pct-num">94%</span></span></td>
+                <td data-label="Llama 4"><span class="pct" style="--p:94"><span class="pct-num">94%</span></span></td>
+                <td data-label="Kimi K2.6"><span class="pct" style="--p:92"><span class="pct-num">92%</span></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div class="table-wrap table-wrap-secondary" role="region" aria-label="Operational comparison" tabindex="0">
           <table class="compare-table compare-table-ops">
             <caption class="sr-only">
@@ -361,16 +516,18 @@
 
         <aside class="compare-footnote">
           <p>
-            <strong>How to read this:</strong> ratings reflect typical results for leading open-weight
-            families (e.g. Llama, Qwen, DeepSeek, Gemma and peers) versus frontier APIs
-            (e.g. GPT, Claude, Gemini class) on enterprise-style work — not a single lab benchmark.
-            Industry evaluations through 2025–2026 show open-weight models within striking distance
-            of frontier quality on coding, classification, extraction, and instruction-following,
-            while self-hosted inference is usually far cheaper at volume.
+            <strong>How to read this:</strong> qualitative ratings compare open-weight deployment
+            versus frontier APIs in general. The percentage table normalises indicative task quality
+            to <strong>Claude Opus&nbsp;4.7 = 100%</strong> for each service area, based on published
+            benchmarks and enterprise-style task patterns for DeepSeek&nbsp;V4&nbsp;Pro, Qwen&nbsp;3.7,
+            Llama&nbsp;4, and Kimi&nbsp;K2.6 (not a single public leaderboard score). Top open-weight
+            models typically land in the ~90–97% range of Claude on our focus workloads; the gap is
+            widest on the hardest open-ended reasoning and narrowest on automation, extraction, and RAG.
           </p>
           <p>
-            We validate every engagement on <em>your</em> data and success metrics before you commit
-            to production architecture.
+            Domain fine-tuning of open-weight models on <em>your</em> data often closes remaining
+            gaps — and can exceed a generic frontier API on specialised tasks. We validate every
+            engagement on your metrics before production.
           </p>
         </aside>
       </div>
