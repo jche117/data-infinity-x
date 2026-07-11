@@ -125,63 +125,33 @@
     <section class="section section-alt" id="compare">
       <div class="container">
         <div class="section-header">
-          <p class="eyebrow">Model comparison</p>
-          <h2>Frontier APIs vs open-weight models we deploy</h2>
+          <p class="eyebrow">Capability vs control</p>
+          <h2>Open-weight models vs frontier APIs</h2>
           <p class="section-lead">
-            Side-by-side view across our focus scenarios: two leading frontier APIs
-            (<strong>GPT-5</strong>, <strong>Claude 4</strong>) and two leading open-weight
-            models you can run privately (<strong>Llama&nbsp;4</strong>, <strong>DeepSeek-V3</strong>).
-            Quality is close on most enterprise work — deployment model, cost, and data control are not.
+            For the workloads we specialise in, leading open-weight models now match
+            or closely approach frontier APIs on quality — while winning on cost,
+            privacy, and where the model can run. Below is how that typically plays
+            out across our focus scenarios.
           </p>
         </div>
 
-        <ul class="model-legend" aria-label="Models compared">
-          <li>
-            <span class="legend-pill legend-frontier">Frontier API</span>
-            <strong>GPT-5</strong>
-            <span>OpenAI · cloud API</span>
-          </li>
-          <li>
-            <span class="legend-pill legend-frontier">Frontier API</span>
-            <strong>Claude 4</strong>
-            <span>Anthropic · cloud API</span>
-          </li>
-          <li>
-            <span class="legend-pill legend-open">Open-weight</span>
-            <strong>Llama 4</strong>
-            <span>Meta · on-prem / private cloud</span>
-          </li>
-          <li>
-            <span class="legend-pill legend-open">Open-weight</span>
-            <strong>DeepSeek-V3</strong>
-            <span>DeepSeek · on-prem / private cloud</span>
-          </li>
-        </ul>
-
         <div class="table-wrap" role="region" aria-label="Performance comparison by service scenario" tabindex="0">
-          <table class="compare-table compare-table-models">
+          <table class="compare-table">
             <caption class="sr-only">
-              Performance comparison of GPT-5, Claude 4, Llama 4, and DeepSeek-V3 across Data Infinity X service scenarios
+              Comparison of open-weight local models versus frontier API models across Data Infinity X service scenarios
             </caption>
             <thead>
               <tr>
                 <th scope="col">Service focus</th>
                 <th scope="col">
-                  GPT-5
-                  <span class="th-sub">Frontier · OpenAI</span>
+                  Open-weight
+                  <span class="th-sub">On-prem / private cloud</span>
                 </th>
                 <th scope="col">
-                  Claude 4
-                  <span class="th-sub">Frontier · Anthropic</span>
+                  Frontier API
+                  <span class="th-sub">Major cloud providers</span>
                 </th>
-                <th scope="col">
-                  Llama 4
-                  <span class="th-sub">Open-weight · Meta</span>
-                </th>
-                <th scope="col">
-                  DeepSeek-V3
-                  <span class="th-sub">Open-weight · DeepSeek</span>
-                </th>
+                <th scope="col">Fit for private enterprise AI</th>
               </tr>
             </thead>
             <tbody>
@@ -190,170 +160,200 @@
                   Pattern recognition
                   <span class="row-sub">Classification, clustering, trend signals</span>
                 </th>
-                <td data-label="GPT-5"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Claude 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Llama 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="DeepSeek-V3"><span class="rating rating-high">Excellent</span></td>
+                <td data-label="Open-weight">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Strong out of the box; fine-tuning on your labelled data often beats a generic API</p>
+                </td>
+                <td data-label="Frontier API">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Top raw quality, but every sample leaves your environment</p>
+                </td>
+                <td data-label="Private enterprise fit">
+                  <span class="verdict verdict-open">Open-weight preferred</span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">
                   Anomaly detection
                   <span class="row-sub">Ops, quality, fraud, sensor outliers</span>
                 </th>
-                <td data-label="GPT-5"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Claude 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Llama 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="DeepSeek-V3"><span class="rating rating-high">Excellent</span></td>
+                <td data-label="Open-weight">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Domain adapters + private history yield high precision without data egress</p>
+                </td>
+                <td data-label="Frontier API">
+                  <span class="rating rating-mid" title="Strong">Strong</span>
+                  <p class="cell-note">Capable, but weaker on proprietary baselines you cannot share</p>
+                </td>
+                <td data-label="Private enterprise fit">
+                  <span class="verdict verdict-open">Open-weight preferred</span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">
                   Process automation
                   <span class="row-sub">Routing, extraction, workflow steps</span>
                 </th>
-                <td data-label="GPT-5"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Claude 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Llama 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="DeepSeek-V3"><span class="rating rating-high">Excellent</span></td>
+                <td data-label="Open-weight">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Structured output &amp; tools are production-ready; cost stays flat as volume grows</p>
+                </td>
+                <td data-label="Frontier API">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Excellent quality; token cost scales linearly with automation volume</p>
+                </td>
+                <td data-label="Private enterprise fit">
+                  <span class="verdict verdict-open">Open-weight preferred</span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">
                   Private knowledge &amp; RAG
                   <span class="row-sub">Policies, manuals, internal Q&amp;A</span>
                 </th>
-                <td data-label="GPT-5"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Claude 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Llama 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="DeepSeek-V3"><span class="rating rating-high">Excellent</span></td>
+                <td data-label="Open-weight">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Documents and embeddings never leave your stack — ideal for sensitive corpora</p>
+                </td>
+                <td data-label="Frontier API">
+                  <span class="rating rating-mid" title="Strong">Strong</span>
+                  <p class="cell-note">Quality is high; data handling and retention policies remain a risk surface</p>
+                </td>
+                <td data-label="Private enterprise fit">
+                  <span class="verdict verdict-open">Open-weight preferred</span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">
                   Document &amp; vision intelligence
                   <span class="row-sub">Invoices, forms, inspection imagery</span>
                 </th>
-                <td data-label="GPT-5"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Claude 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Llama 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="DeepSeek-V3"><span class="rating rating-mid">Strong</span></td>
+                <td data-label="Open-weight">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Multimodal open models handle OCR + layout; fine-tune on your document types</p>
+                </td>
+                <td data-label="Frontier API">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Often best zero-shot; sending scans/images off-site is a non-starter for many orgs</p>
+                </td>
+                <td data-label="Private enterprise fit">
+                  <span class="verdict verdict-open">Open-weight preferred</span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">
                   Predictive maintenance
                   <span class="row-sub">Failure signals from ops history</span>
                 </th>
-                <td data-label="GPT-5"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Claude 4"><span class="rating rating-mid">Strong</span></td>
-                <td data-label="Llama 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="DeepSeek-V3"><span class="rating rating-high">Excellent</span></td>
+                <td data-label="Open-weight">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Combines LLMs with classical ML on telemetry that stays on-site</p>
+                </td>
+                <td data-label="Frontier API">
+                  <span class="rating rating-mid" title="Strong">Strong</span>
+                  <p class="cell-note">Useful for analysis; continuous streaming of plant data is rarely acceptable</p>
+                </td>
+                <td data-label="Private enterprise fit">
+                  <span class="verdict verdict-open">Open-weight preferred</span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">
                   Demand &amp; capacity forecasting
                   <span class="row-sub">Planning on proprietary history</span>
                 </th>
-                <td data-label="GPT-5"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Claude 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Llama 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="DeepSeek-V3"><span class="rating rating-high">Excellent</span></td>
+                <td data-label="Open-weight">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Models + forecasting stacks trained on your series outperform generic public priors</p>
+                </td>
+                <td data-label="Frontier API">
+                  <span class="rating rating-mid" title="Strong">Strong</span>
+                  <p class="cell-note">Good reasoning over tables; limited if full history cannot be shared</p>
+                </td>
+                <td data-label="Private enterprise fit">
+                  <span class="verdict verdict-open">Open-weight preferred</span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">
                   Secure internal assistants
                   <span class="row-sub">Staff copilots on internal systems</span>
                 </th>
-                <td data-label="GPT-5"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Claude 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="Llama 4"><span class="rating rating-high">Excellent</span></td>
-                <td data-label="DeepSeek-V3"><span class="rating rating-high">Excellent</span></td>
+                <td data-label="Open-weight">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Grounded in your tools with access control you define; no third-party retention</p>
+                </td>
+                <td data-label="Frontier API">
+                  <span class="rating rating-high" title="Excellent">Excellent</span>
+                  <p class="cell-note">Polished UX; enterprise data still traverses an external provider</p>
+                </td>
+                <td data-label="Private enterprise fit">
+                  <span class="verdict verdict-open">Open-weight preferred</span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">
                   Hard multi-step reasoning
                   <span class="row-sub">Novel research-grade problems</span>
                 </th>
-                <td data-label="GPT-5"><span class="rating rating-lead">Leading</span></td>
-                <td data-label="Claude 4"><span class="rating rating-lead">Leading</span></td>
-                <td data-label="Llama 4"><span class="rating rating-mid">Strong</span></td>
-                <td data-label="DeepSeek-V3"><span class="rating rating-high">Excellent</span></td>
+                <td data-label="Open-weight">
+                  <span class="rating rating-mid" title="Strong">Strong</span>
+                  <p class="cell-note">Gap to the absolute frontier is now narrow (often months, not years)</p>
+                </td>
+                <td data-label="Frontier API">
+                  <span class="rating rating-high" title="Leading">Leading</span>
+                  <p class="cell-note">Still edge on the hardest open-ended reasoning tasks</p>
+                </td>
+                <td data-label="Private enterprise fit">
+                  <span class="verdict verdict-hybrid">Hybrid when needed</span>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="table-wrap table-wrap-secondary" role="region" aria-label="Operational comparison across models" tabindex="0">
-          <table class="compare-table compare-table-models compare-table-ops">
+        <div class="table-wrap table-wrap-secondary" role="region" aria-label="Operational comparison" tabindex="0">
+          <table class="compare-table compare-table-ops">
             <caption class="sr-only">
-              Operational comparison of GPT-5, Claude 4, Llama 4, and DeepSeek-V3
+              Operational comparison: cost, data control, latency, customisation, and lock-in
             </caption>
             <thead>
               <tr>
                 <th scope="col">Operational factor</th>
-                <th scope="col">
-                  GPT-5
-                  <span class="th-sub">Frontier · OpenAI</span>
-                </th>
-                <th scope="col">
-                  Claude 4
-                  <span class="th-sub">Frontier · Anthropic</span>
-                </th>
-                <th scope="col">
-                  Llama 4
-                  <span class="th-sub">Open-weight · Meta</span>
-                </th>
-                <th scope="col">
-                  DeepSeek-V3
-                  <span class="th-sub">Open-weight · DeepSeek</span>
-                </th>
+                <th scope="col">Open-weight (localised)</th>
+                <th scope="col">Frontier API</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">Typical deployment</th>
-                <td data-label="GPT-5"><span class="ops-val">Vendor cloud API</span></td>
-                <td data-label="Claude 4"><span class="ops-val">Vendor cloud API</span></td>
-                <td data-label="Llama 4"><span class="ops-val ops-val-open">On-prem / private cloud</span></td>
-                <td data-label="DeepSeek-V3"><span class="ops-val ops-val-open">On-prem / private cloud</span></td>
+                <th scope="row">Task quality (our focus scenarios)</th>
+                <td data-label="Open-weight"><span class="bar" style="--p:92"><span>Comparable on most enterprise tasks</span></span></td>
+                <td data-label="Frontier API"><span class="bar bar-alt" style="--p:96"><span>Slight edge on hardest reasoning</span></span></td>
               </tr>
               <tr>
                 <th scope="row">Cost at production volume</th>
-                <td data-label="GPT-5"><span class="ops-val">High · per-token</span></td>
-                <td data-label="Claude 4"><span class="ops-val">High · per-token</span></td>
-                <td data-label="Llama 4"><span class="ops-val ops-val-open">Low–medium · infra</span></td>
-                <td data-label="DeepSeek-V3"><span class="ops-val ops-val-open">Low · infra (efficient MoE)</span></td>
+                <td data-label="Open-weight"><span class="bar" style="--p:95"><span>Predictable infra — typically far lower at scale</span></span></td>
+                <td data-label="Frontier API"><span class="bar bar-alt" style="--p:40"><span>Per-token bills grow with usage</span></span></td>
               </tr>
               <tr>
-                <th scope="row">Enterprise data stays private</th>
-                <td data-label="GPT-5"><span class="ops-val">Depends on vendor terms</span></td>
-                <td data-label="Claude 4"><span class="ops-val">Depends on vendor terms</span></td>
-                <td data-label="Llama 4"><span class="ops-val ops-val-open">Yes · fully local</span></td>
-                <td data-label="DeepSeek-V3"><span class="ops-val ops-val-open">Yes · fully local</span></td>
+                <th scope="row">Data sovereignty &amp; IP</th>
+                <td data-label="Open-weight"><span class="bar" style="--p:100"><span>Data stays yours — strategic advantage retained</span></span></td>
+                <td data-label="Frontier API"><span class="bar bar-alt" style="--p:35"><span>Prompts &amp; context sent to third parties</span></span></td>
               </tr>
               <tr>
-                <th scope="row">Air-gapped / offline capable</th>
-                <td data-label="GPT-5"><span class="ops-val">No</span></td>
-                <td data-label="Claude 4"><span class="ops-val">No</span></td>
-                <td data-label="Llama 4"><span class="ops-val ops-val-open">Yes</span></td>
-                <td data-label="DeepSeek-V3"><span class="ops-val ops-val-open">Yes</span></td>
+                <th scope="row">Latency &amp; offline / air-gap</th>
+                <td data-label="Open-weight"><span class="bar" style="--p:90"><span>Local inference; works without public internet</span></span></td>
+                <td data-label="Frontier API"><span class="bar bar-alt" style="--p:45"><span>Network-bound; not viable air-gapped</span></span></td>
               </tr>
               <tr>
-                <th scope="row">Fine-tune on your domain data</th>
-                <td data-label="GPT-5"><span class="ops-val">Limited · vendor options</span></td>
-                <td data-label="Claude 4"><span class="ops-val">Limited · vendor options</span></td>
-                <td data-label="Llama 4"><span class="ops-val ops-val-open">Full · weights &amp; adapters</span></td>
-                <td data-label="DeepSeek-V3"><span class="ops-val ops-val-open">Full · weights &amp; adapters</span></td>
+                <th scope="row">Fine-tune on your domain</th>
+                <td data-label="Open-weight"><span class="bar" style="--p:98"><span>Full control of weights &amp; adapters</span></span></td>
+                <td data-label="Frontier API"><span class="bar bar-alt" style="--p:55"><span>Limited to vendor fine-tune / RAG options</span></span></td>
               </tr>
               <tr>
-                <th scope="row">Vendor lock-in</th>
-                <td data-label="GPT-5"><span class="ops-val">High</span></td>
-                <td data-label="Claude 4"><span class="ops-val">High</span></td>
-                <td data-label="Llama 4"><span class="ops-val ops-val-open">Low · portable</span></td>
-                <td data-label="DeepSeek-V3"><span class="ops-val ops-val-open">Low · portable</span></td>
-              </tr>
-              <tr>
-                <th scope="row">Best when you need…</th>
-                <td data-label="GPT-5"><span class="ops-val">Peak zero-shot polish</span></td>
-                <td data-label="Claude 4"><span class="ops-val">Careful long-context work</span></td>
-                <td data-label="Llama 4"><span class="ops-val ops-val-open">Private generalist platform</span></td>
-                <td data-label="DeepSeek-V3"><span class="ops-val ops-val-open">Strong reasoning at low run cost</span></td>
+                <th scope="row">Vendor lock-in risk</th>
+                <td data-label="Open-weight"><span class="bar" style="--p:88"><span>Portable models &amp; open runtimes</span></span></td>
+                <td data-label="Frontier API"><span class="bar bar-alt" style="--p:30"><span>Tied to provider pricing &amp; terms</span></span></td>
               </tr>
             </tbody>
           </table>
@@ -361,16 +361,16 @@
 
         <aside class="compare-footnote">
           <p>
-            <strong>How to read this:</strong> ratings are indicative of typical enterprise-task performance
-            for current flagship releases in each family (GPT-5 class, Claude 4 class, Llama&nbsp;4 class,
-            DeepSeek-V3 class) — not a single lab leaderboard score. Across pattern recognition,
-            automation, RAG, and document workflows, open-weight models are now competitive with
-            frontier APIs; frontier models still edge the hardest open-ended reasoning.
+            <strong>How to read this:</strong> ratings reflect typical results for leading open-weight
+            families (e.g. Llama, Qwen, DeepSeek, Gemma and peers) versus frontier APIs
+            (e.g. GPT, Claude, Gemini class) on enterprise-style work — not a single lab benchmark.
+            Industry evaluations through 2025–2026 show open-weight models within striking distance
+            of frontier quality on coding, classification, extraction, and instruction-following,
+            while self-hosted inference is usually far cheaper at volume.
           </p>
           <p>
-            We select and benchmark the right model family on <em>your</em> data before production —
-            including fine-tuned open-weight variants that often outperform a generic frontier API
-            on domain-specific work.
+            We validate every engagement on <em>your</em> data and success metrics before you commit
+            to production architecture.
           </p>
         </aside>
       </div>
